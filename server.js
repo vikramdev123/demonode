@@ -27,7 +27,6 @@ app.use(function(req, res, next) {
 });
 
 app.get('/script.js', (req,res) => {
-    //console.log(process.env);
     fs.readFile('script.js', (err,data) => {
         if(err) throw err;
         res.writeHead(200, {'Content-Type': 'text/javascript'});
