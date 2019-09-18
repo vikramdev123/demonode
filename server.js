@@ -11,6 +11,8 @@ const db = mysql.createConnection({
     database: 'node_analytics'
 });
 
+const pi = 3.14;
+
 db.connect((err) => {
     if(err) throw err;
     console.log('Connected to database');
