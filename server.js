@@ -6,9 +6,9 @@ const port = process.env.port || 8080;
 
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'root',
-    password: 'letmein12@',
-    database: 'node_analytics'
+    user: '',
+    password: '',
+    database: ''
 });
 
 db.connect((err) => {
